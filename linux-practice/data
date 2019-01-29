@@ -1,0 +1,299 @@
+Linux Vs Windows
+Linux Interview Questions
+LINUX	WINDOWS
+Linux is available for free	Windows has to be bought
+It is an open source OS	It is not open source OS
+One can customize Linux	No customizations available
+Provides high level security	Cannot defend virus and malware attacks
+Primary partitionig and logical partitioning available to boot	
+Booting available while primary partitioning only
+Back Slash separates directories	Forward slash separates directories
+File names are case particular	Irrespective of case while naming files
+Q. What is the difference between Linux and UNIX?
+
+A. UNIX - Only big companies are allowed to use the UNIX copyright and name. IBM AIX, Sun Solaris, and HP-UX all are UNIX operating systems. Most UNIX operating systems are commercial in nature.
+
+Linux is a Unix clone. But if you consider Portable Operating System Interface (POSIX) standards then Linux can be considered as UNIX.
+
+Linux Is Just Kernal
+
+All Linux distributions include GUI system, GNU utilities, installation & management tools, GNU c/c++ Compilers, Editors (vi), and various applications like OpenOffice, Firefox.
+
+UNIX operating systems are considered as a complete OS as everything come from a single vendor.
+
+License and cost
+
+Linux is Free. You can download it from the Internet or redistribute it under GNU licenses. Most UNIX like operating systems are not free.
+
+Security And Firewall
+
+Linux comes with open source Netfilter and IPTables based firewall tool to protect your server and desktop from the crackers and hackers. UNIX operating systems comes with its own firewall products. 
+
+Backup And Recovery
+
+UNIX and Linux come with their own set of tools for backing up data to tape and other backup media. However, both Linux and UNIX share some common tools such as tar, dump/restore, and cpio etc.
+
+Q. What are Linux file systems?
+
+A. By default, Linux supports and use ext3 or ext4 file systems. UNIX supports file systems like jfs, gpfs (AIX), jfs, gpfs (HP-UX), jfs, gpfs (Solaris).
+
+Q. What are System Startup Scripts?
+
+A. By default, Linux and UNIX come with system initialization script but they are located in different directories:
+
+HP-UX – /sbin/init.d
+AIX – /etc/rc.d/init.d
+Linux – /etc/init.d
+Q. What are the some UNIX Operating System Names?
+
+A. Some of the most used UNIX operating systems are:
+
+HP-UX
+IBM AIX
+Sun Solairs
+Mac OS X
+IRIX
+Q. What are the Linux Distribution (Operating System) Names?
+
+A. Here are the some Linux operating system names:
+
+Redhat Enterprise Linux
+Fedora Linux
+Debian Linux
+Suse Enterprise Linux
+Ubuntu Linux
+Q. What are some common things between Linux & UNIX?
+
+A. Both Linux and UNIX share many common applications such as:
+
+GUI, file, and windows managers (KDE, Gnome)
+Shells (ksh, csh, bash)
+Various office applications such as OpenOffice.org
+Development tools like perl, php, python, GNU c/c++ compilers
+Posix interface
+Learn how to use Linux, from beginner basics to advanced techniques, with online video tutorials taught by industry experts. Enroll for Free Linux Training Demo!
+Q. What does curl command do in Linux?
+
+A. In Linux, curl command is used to test an application's endpoint or connectivity to an upstream service endpoint. curl command will be used to determine if the application can reach another service, like a database, or checking if your service is healthy.
+
+curl Example:
+
+$ curl -I -s myapplication:5000
+HTTP/1.0 500 INTERNAL SERVER ERROR
+
+This example through an exception saying that your application can't reach your server.
+
+In the above command, the -I option shows the header information and the -s option silences the response body.
+
+Q. What is ls command and what it does?
+
+A. ls lists files in a directory. In Linux System admins and developers uses this command very often. In containers, ls command can help determine your container image's directory and files.
+
+ls Example:
+
+$ ./myapp
+bash: ./myapp: Permission denied
+$ ls -l myapp
+-rw-r--r--. 1 root root 33 Dec 17 15:27 myapp
+
+Q. What is tail command in Linux?
+
+A. tail command displays the last part of a file. Generally, users don't need every log line to troubleshoot. Instead, you want to check what your logs say about the most recent request to your application.
+
+tail Example:
+
+$ tail -n 100 /var/log/httpd/access_log
+
+Q. What is cat command in Linux?
+
+A. In Linux cat command concatenates and prints files. Users might issue cat to check the contents of your dependencies file or to confirm the version of the application that you have already built locally.
+
+cat Example:
+
+$ cat requirements.txt
+flask
+flask_pymongo
+
+Q. What is grep command in Linux?
+
+A. grep searches file patterns. If you are looking for a specific pattern in the output of another command, grep highlights the relevant lines. Use this grep command for searching log files, specific processes, and more.
+
+grep Example: 
+
+$ cat tomcat.log | grep org.apache.catalina.startup.Catalina.start
+12-Jan-2018 17:08:35.542 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 681 ms
+
+Q. What is ps command in Linux?
+
+A. ps command displays process status. Use this ps command to determine a running application or confirm an expected process.
+
+ps Command Example:
+
+$ ps -ef
+
+$ ps -ef | grep tomcat
+
+Q. What is env command in Linux?
+
+A. env command allows users to set or print the environment variables. During troubleshooting, users can find it useful for checking if the wrong environment variable prevents your application from starting.
+
+env Command Example:
+
+$ env
+PYTHON_PIP_VERSION=9.0.1
+HOME=/root
+DB_NAME=test
+PATH=/usr/local/bin:/usr/local/sbin
+LANG=C.UTF-8
+PYTHON_VERSION=3.4.6
+PWD=/
+DB_URI=mongodb://database:27017/test
+
+Q. What is top Command in Linux?
+
+A. top command displays and updates sorted process information. Use this top command to determine which processes are running and how much memory and CPU they are consuming.
+
+Q. What is netstat command in Linux?
+
+A. netstat command in Linux shows the network status. This netstat command shows network ports in use and their incoming connections.
+
+Q. What is lsof command in Linux?
+
+A. lsof command lists the open files associated with your application.
+
+Q. What is df command in Linux?
+
+A. Users can use df command to troubleshoot disk space issues. Here df stands for display free disk space.
+
+df Command Example:
+
+df -h
+
+Q. What is du command in Linux?
+
+A. du command in Linux is used to retrieve more detailed information about which files use the disk space in a directory.
+
+du Command Example:
+
+$ du -sh /var/log/*
+1.8M  /var/log/anaconda
+384K  /var/log/audit
+4.0K  /var/log/boot.log
+0 /var/log/chrony
+4.0K  /var/log/cron
+4.0K  /var/log/maillog
+64K /var/log/messages
+
+Q. What is iptables command in Linux?
+
+A. iptables command blocks or allows traffic on a Linux host, similar to a network firewall. This iptables command may prevent certain applications from receiving or transmitting requests.
+
+Learn how to use Linux, from beginner basics to advanced techniquesLearn Linux!
+ 
+
+Q. What does cd - command do?
+
+A. cd- command go to the previous directory.
+
+Q. What does cd command do?
+
+A. Go to $HOME directory
+
+Q. What does (cd dir && command) do?
+
+A. cd dir && command goes to the dir, execute the command and return to the current directory.
+
+Q. What does pushd command do?
+
+A. pushhd command put current dir on stack so you can pop back to it.
+
+Q. What is ls -lSr command?
+
+A. ls - ISr command shows files by size, biggest file will be displayed last.
+
+Q. What is du -s * | sort -k1,1rn | head command used for?
+
+A. This command shows top disk users in current dir.
+
+Q. What does this du -hs /home/* | sort -k1,1h command do?
+
+A. This command sort path by easy to interpret disk usage.
+
+Q. What is df -h command?
+
+A. This command show free space on mounted file systems.
+
+Q. What is df -i command?
+
+A. df -i command shows free inodes on mounted filesystems.
+
+Q. What is fdisk -l command used for?
+
+A. fdisk -I command show disks partitions sizes and types (run as root).
+
+ Check Out Linux Sample Resumes
+
+Q. How do you kill program using one port in Linux?
+
+A. Use this command to kills the program using one port: sudo fuser -k 8000/tcp
+
+Q. How do you limit memory usage for commands?
+
+A. ulimit -Sv 1000       # 1000 KBs = 1 MB
+    ulimit -Sv unlimited  # Remove limit
+
+Q. How do you get full path of a file in Linux?
+
+A. Use this command: readlink -f file.txt
+
+Q. How do you list contents of tar.gz and extract only one file?
+
+A. Use these commands:
+
+tar tf file.tgz
+tar xf file.tgz filename
+Q. How do you find who is logged in?
+
+A. Use this command to find who logged in: w
+
+Q. How do you check permissions of each directory to a file?
+
+A. It is useful to detect permissions errors, for example when configuring a web server.
+
+namei -l /path/to/file.txt
+
+Q. How do you run command every time a file is modified?
+
+A. Use this command to do:
+
+while inotifywait -e close_write document.tex
+
+do
+
+make
+
+done
+
+Q. How to copy text to clipboard?
+
+A. Use this command: cat file.txt | xclip -selection clipboard
+
+Q. How do you check resources usage?
+
+A. Use this command to check resource usage: /usr/bin/time -v ls
+
+Q. How do you run a command for a limited time?
+
+A. Use this command: timeout 10s ./script.sh
+
+# Restart every 30 minutes
+while true; do timeout 30m ./script.sh; done
+
+Q. How do you combine two lines from two sorted files in Linux?
+
+A. Use this command: comm file1 file2.
+
+List of Other Linux Courses:
+ Red Hat Certified Engineer	 Linux Security Fundamentals
+ Linux Networking	 Linux Administration
+ Linux Cluster	 IBM LinuxONE

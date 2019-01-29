@@ -1,0 +1,32 @@
+
+# Command to replace all Ip addresses with one Ip address
+#cmd is: sed -i -e 's/[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}/127.0.0.1/g' Ip-address
+
+US East (N. Virginia) 	127.0.0.1
+US East (N. Virginia) 	127.0.0.1
+US East (N. Virginia) 	127.0.0.1
+US East (N. Virginia)	127.0.0.1
+US East (N. Virginia)	127.0.0.1
+US West  (Oregon) 	127.0.0.1
+US West  (Oregon)	127.0.0.1
+US West  (Oregon)	127.0.0.1
+US West  (Oregon) 	127.0.0.1
+US West  (Oregon)	127.0.0.1
+EU (Frankfurt) 		127.0.0.1
+EU (Frankfurt) 		127.0.0.1
+EU (Frankfurt)		127.0.0.1
+EU (Frankfurt) 		127.0.0.1
+EU (Frankfurt) 		127.0.0.1
+EU (London)		127.0.0.1
+EU (London)		127.0.0.1
+EU (Paris)		127.0.0.1
+EU (Paris)		127.0.0.1
+EU (Paris)		127.0.0.1
+Asia Pacific (Mumbai)	127.0.0.1
+Asia Pacific (Mumbai)	127.0.0.1
+Asia Pacific (Singape)  127.0.0.1
+Asia Pacific (Singape)  127.0.0.1
+Asia Pacific (Sydney)	127.0.0.1
+Asia Pacific (Sydney)	127.0.0.1
+Brazil (São Paulo)	127.0.0.1
+Brazil (São Paulo)	127.0.0.1

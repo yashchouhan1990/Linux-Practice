@@ -1,0 +1,15 @@
+#!/bin/bash -xvf
+
+a=10
+echo "Hi"
+echo "$a"
+
+#Readonly makes the variable value constant
+readonly a
+a= 20
+echo "$a"
+
+b=20
+echo "$b"
+unset b
+echo "$b"
